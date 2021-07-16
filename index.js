@@ -5,6 +5,10 @@ let path = require('path');
 if(process.argv.length != 4 && process.argv.length != 5) {
   console.error(`Invalid number of arguments. This is the correct usage:
     node index.js <source directory> <destination directory> [-mirror|-scan]
+
+    -mirror: This option will create sub directories
+    -scan: This option will perform a trial run
+
     By default, this script will flatten the source nested directory.
   `)
   return;
