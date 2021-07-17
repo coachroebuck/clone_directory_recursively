@@ -57,7 +57,7 @@ function recFindByExt(fromDir, toDir,  options) {
               console.error("Error creating destination directory: ", mirrorDestDir, err);
             }
             else {
-              console.log(`Created directory: ${destDir}`)
+              console.log(`Created directory: ${mirrorDestDir}`)
               recFindByExt(sourceFile, mirrorDestDir, options);
             }
           });
